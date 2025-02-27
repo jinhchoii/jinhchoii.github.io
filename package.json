@@ -1,7 +1,7 @@
 {
   "name": "kizou",
   "version": "0.1.0",
-  "homepage": "http://kizou.org",
+  "homepage": "https://jinhchoii.github.io",
   "private": true,
   "dependencies": {
     "@headlessui/react": "^1.5.0",
@@ -18,6 +18,8 @@
     "typescript": "^3.2.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b main -d build",
     "start": "react-scripts start",
     "build": "react-scripts build"
   },
